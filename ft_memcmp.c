@@ -14,16 +14,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (s1bis[i] - s2bis[i]);
 
 }
-
-int	main()
-{
-	const char	s1[]= "Hello. world.!";
-	const char	s2[]= "Maman. world.!";
-	size_t		n;
-
-	n = 8;
-	ft_memcmp(s1, s2, n);
-	printf("%d\n", memcmp(s1, s2, n));
-	printf("%d\n", ft_memcmp(s1, s2, n));
-	return 0;
-}

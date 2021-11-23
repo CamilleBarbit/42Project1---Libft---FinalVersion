@@ -17,17 +17,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-int	main()
-{
-	const char	s[]= "Hello. world.!";
-	int			c;
-	size_t		n;
-
-	c = 'd';
-	n = 14;
-	ft_memchr(s, c, n);
-	printf("%p\n", memchr(s, c, n));
-	printf("%p\n", ft_memchr(s, c, n));
-	return 0;
-}

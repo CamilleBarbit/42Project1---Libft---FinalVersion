@@ -18,18 +18,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-int	main()
-{
-	char	str[]= "BONef qerjkbeu";
-	int		c;
-	size_t	n;
-
-	c = 38;
-	n = 3;
-	ft_memset(str+2, c, n);
-	printf("%s\n", str);
-	memset(str+2, c, n);
-	printf("%s", str);
-	return 0;
-}
