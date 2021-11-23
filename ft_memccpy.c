@@ -7,8 +7,8 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	const char	*s;
 
 	i = 0;
-	s = src;
-	d = dest;
+	s = (const char *)src;
+	d = (char *)dest;
 	while (i < n)
 	{
 		d[i] = s[i];
