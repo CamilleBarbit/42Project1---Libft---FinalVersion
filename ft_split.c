@@ -6,7 +6,7 @@
 /*   By: camillebarbit <camillebarbit@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:42:05 by camillebarb       #+#    #+#             */
-/*   Updated: 2021/11/24 11:42:06 by camillebarb      ###   ########.fr       */
+/*   Updated: 2021/11/24 16:16:51 by camillebarb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int  ft_count_words(const char *string, char a)
     count = 0;
     while (string[i])
     {
-        if (string[i] != a && (string[i+1] == a || string[i + 1] == '\0'))
+        if (string[i] != a && (string[i + 1] == a || string[i + 1] == '\0'))
             count += 1;
         i++;
     }
