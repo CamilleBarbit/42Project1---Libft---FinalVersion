@@ -5,6 +5,12 @@
 #include <string.h>
 #include <stdlib.h>
 
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+} t_list
+
 char    *ft_itoa(int n);
 char    **ft_split(const char *s, char c);
 char	*ft_strchr(const char *string, int c);
