@@ -6,7 +6,7 @@
 /*   By: camillebarbit <camillebarbit@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:39:28 by camillebarb       #+#    #+#             */
-/*   Updated: 2021/11/24 11:39:30 by camillebarb      ###   ########.fr       */
+/*   Updated: 2021/11/25 12:31:54 by camillebarb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char    *ft_itoa(int n)
     int     i; 
 
     i = ft_count_char(n);
-    string = malloc(sizeof(char) * ft_count_char(n) + 1);
+    string = malloc(sizeof(char) * i + 1);
     if (!string)
         return (NULL);
     string[i] = '\0';
