@@ -6,7 +6,7 @@
 /*   By: camillebarbit <camillebarbit@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:43:11 by camillebarb       #+#    #+#             */
-/*   Updated: 2021/11/24 11:43:14 by camillebarb      ###   ########.fr       */
+/*   Updated: 2021/11/25 10:44:03 by camillebarb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char    *ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-    char            *sbis;
-    int    i;
+    char    *sbis;
+    int     i;
 
     i = 0;
     sbis = malloc(sizeof(char) * ft_strlen(s) + 1);
