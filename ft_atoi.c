@@ -6,7 +6,7 @@
 /*   By: camillebarbit <camillebarbit@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:37:38 by camillebarb       #+#    #+#             */
-/*   Updated: 2021/11/24 11:37:40 by camillebarb      ###   ########.fr       */
+/*   Updated: 2021/11/26 12:10:46 by camillebarb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int ft_atoi(const char *str)
 		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r'
 		|| str[i] == ' ')
 		i++;
-	while (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
 			sign = sign * -1;
