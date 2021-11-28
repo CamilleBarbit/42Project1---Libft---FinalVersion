@@ -6,7 +6,7 @@
 /*   By: camillebarbit <camillebarbit@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:39:54 by camillebarb       #+#    #+#             */
-/*   Updated: 2021/11/26 12:09:47 by camillebarb      ###   ########.fr       */
+/*   Updated: 2021/11/28 11:24:57 by camillebarb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	size_t			i;
 
 	i = 0;
-	s1bis = (unsigned char)s1;
-	s2bis = (unsigned char)s2;
+	s1bis = (unsigned char *)s1;
+	s2bis = (unsigned char *)s2;
 	while (s1bis[i] && s2bis[i] && s1bis[i] == s2bis[i] && i < n - 1)
 		i++;
 	return (s1bis[i] - s2bis[i]);
