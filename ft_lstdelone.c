@@ -6,7 +6,7 @@
 /*   By: camillebarbit <camillebarbit@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 13:13:55 by camillebarb       #+#    #+#             */
-/*   Updated: 2021/11/28 12:49:18 by camillebarb      ###   ########.fr       */
+/*   Updated: 2021/11/29 11:30:15 by camillebarb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void    ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-    (del)(lst->content);
+    (*del)(lst->content);
     free(lst->content);
 }
