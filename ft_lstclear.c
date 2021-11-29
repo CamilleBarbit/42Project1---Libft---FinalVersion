@@ -6,7 +6,7 @@
 /*   By: camillebarbit <camillebarbit@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 13:39:28 by camillebarb       #+#    #+#             */
-/*   Updated: 2021/11/28 12:44:57 by camillebarb      ###   ########.fr       */
+/*   Updated: 2021/11/29 11:28:43 by camillebarb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 void    ft_lstclear(t_list **lst, void (*del)(void*))
 {
    t_list   *list;
+   t_list   *temp;
 
    list = *lst;
-   if (list->next == NULL)
-        ft_lstdelone(list, del);
-   while (list->next != NULL)
+   while (list != NULL)
    {
-       ft_lstdelone(list, del);
+       temp = list;
        list = list->next;
+       ft_lstdelone(temp, del);
    }
+   lst = NULL;
 }
